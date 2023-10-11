@@ -4,6 +4,6 @@ provider "aws" {
 
 resource "aws_instance" "demo_instance" {
   count         = 3
-  ami           = "ami-0c42696027a8ede58" # Change to a valid AMI ID
+  ami           = "ami-0c42696027a8ede58" 
   instance_type = "t2.micro"
 }
