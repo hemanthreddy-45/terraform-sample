@@ -9,7 +9,7 @@ data "aws_subnet" "my_subnet" {
 }
 resource "aws_instance" "demo_instance" {
 subnet_id = data.aws_subnet.my_subnet.id 
-count         =  3
+count         =  1
   ami           = "ami-024e6efaf93d85776" 
   instance_type = "t2.micro"
 }
